@@ -1,0 +1,27 @@
+{
+  "name": "webapp",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "bin":"./bin/www",
+  "pkg":{
+    "scripts":["routes/*"],
+    "assets":["views/*","public/**/*"]
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "ejs": "~2.5.7",
+    "express": "~4.16.0",
+    "express-partials": "^0.3.0",
+    "formidable": "^1.2.1",
+    "http-errors": "~1.6.2",
+    "jsonfile": "^5.0.0",
+    "lodash": "^4.17.11",
+    "morgan": "~1.9.0",
+    "xlsx": "^0.14.1",
+    "node-xlsx": "^0.12.1"
+  }
+}
