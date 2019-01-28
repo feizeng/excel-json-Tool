@@ -48,11 +48,11 @@ router.post('/excel', function(req, res, next) {
                 }
             });
         }
-        if (files.excel.type.indexOf('json') !== -1) {
+        if (files.excel.name.indexOf('json') !== -1) {
             str = [];
             str.push(['KEYS', 'VALS']);
             jsonfile.readFile(oldpath, function(err, obj) {
-                tableToExcel(obj, '');
+                tableToExcel(obj,'');
                 let num = 0;
                 let excel_files = path.join(os.homedir(),
                     'Desktop/excel'+num+'.xlsx'
